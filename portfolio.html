@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <title>Портфолио</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
     <header>
       <nav>
-        <a href="#"><span>Web</span>Studio</a>
-        <ul>
-          <li><a href="./index.html">Студия</a></li>
-          <li><a href="#">Контакты</a></li>
-          <li><a href="#" target="_blank">Портфолио</a></li>
+        <a class="logo link" href="#"><span class="logo-accent">Web</span>Studio</a>
+        <ul class="site-nav list">
+          <li><a class="item link" href="./index.html">Студия</a></li>
+          <li><a class="item link open-page" href="#" target="_blank">Портфолио</a></li>
+          <li><a class="item link" href="#">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contact-link list">
+        <li><a class="item link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li><a class="item link" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
 
@@ -32,7 +35,7 @@
           <button type="button">Маркетинг</button>
         </div>
 
-        <ul>
+        <ul class="list">
           <li>
             <a href="#" target="_blank">
               <img src="./images/portfolio-technokryak-1.jpg" alt="страница веб-сайта 'технокряк'" width="370" height="294">
@@ -100,14 +103,14 @@
       </section> 
     </main>
 
-    <footer>
-      <div>
-        <a href="#"><span>Web</span>Studio</a>
-        <address>
+    <footer class="draft-bg">
+      <div class="address">
+        <a class="logo link" href="#"><span class="logo-accent">Web</span>Studio</a>
+        <address class="address-text">
           г. Киев, пр-т Леси Украинки, 26
-          <ul>
-            <li><a href="mailto:info@example.com">info@example.com</a></li>
-            <li><a href="tel:+380991111111">+38 099 111 11 11</a></li>
+          <ul class="list">
+            <li><a class="item link" href="mailto:info@example.com">info@example.com</a></li>
+            <li><a class="item link" href="tel:+380991111111">+38 099 111 11 11</a></li>
           </ul>
         </address>
       </div>
