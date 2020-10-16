@@ -1,3 +1,30 @@
+/* raleway-regular - latin_cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/raleway-v18-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/raleway-v18-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v18-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v18-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v18-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v18-latin_cyrillic-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-700 - latin_cyrillic */
+@font-face {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/raleway-v18-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local(''),
+       url('../fonts/raleway-v18-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/raleway-v18-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/raleway-v18-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/raleway-v18-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/raleway-v18-latin_cyrillic-700.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
 :root {
   --main-text-color: #757575;
   --title-text-color: #212121;
@@ -6,7 +33,7 @@
   --primary-white-color: #FFFFFF; 
   --secondary-white-color: rgba(255,255,255,0.6);
   --primary-btn-bg-color: #188CE8;
-  --secondary-btn-bg-color: #EEEEEE;
+  --secondary-btn-bg-color: #F5F4FA;
 }
 
 body {
@@ -71,6 +98,10 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .open-page {
+  color: var(--accent-color);
+}
+
 /* герой */
 
 .hero-title{
@@ -83,12 +114,17 @@ body {
   color: var(--primary-white-color);
 }
 
-.btn-primary {
-  font-family: inherit;
-  font-weight: 700;
+.btn {
+  font-weight: 500;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.62;
   text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.hero .btn {
+  font-weight: 700;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--primary-btn-bg-color);
@@ -150,6 +186,34 @@ body {
   background-color: #2F303A; 
 }
 
-.site-nav .open-page {
-  color: var(--accent-color);
+/* портфолио работы */
+
+.btn {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.btn.primary {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
+}
+
+.btn.secondary {
+  color: var(--title-text-color);
+  background-color: var(--secondary-btn-bg-color);
+}
+
+.work-title {
+  font-size: 18px;
+  line-height: 2.0;
+  letter-spacing: 0.06em;
+}
+
+.work-subtitle {
+font-size: 16px;
+line-height: 1.87;
+color: var(--title-text-color);
 }
