@@ -181,6 +181,10 @@ body {
   color: var(--secondary-white-color);
 }
 
+.address .item:hover,
+.address .item:focus {
+  color: var(--accent-color);
+}
 /* временный фон для видимости белых шрифтов */
 .draft-bg {
   background-color: #2F303A; 
@@ -204,6 +208,12 @@ body {
 .btn.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary-btn-bg-color);
+}
+
+.btn.secondary:hover,
+.btn.secondary:focus {
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
 
 .work-title {
